@@ -1,2 +1,2 @@
-# charniga
+# charliga
 student project
