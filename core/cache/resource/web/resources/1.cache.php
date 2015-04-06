@@ -15,8 +15,10 @@
     'unpub_date' => 0,
     'parent' => 0,
     'isfolder' => 0,
-    'introtext' => NULL,
-    'content' => '',
+    'introtext' => '',
+    'content' => 'It\'s work!!!<br/>
+Hello world!!!<br/>
+<input type="button" name="empty" value="test"/>',
     'richtext' => 1,
     'template' => 1,
     'menuindex' => 0,
@@ -24,8 +26,8 @@
     'cacheable' => 1,
     'createdby' => 1,
     'createdon' => 1426867903,
-    'editedby' => 0,
-    'editedon' => 0,
+    'editedby' => 1,
+    'editedon' => 1427273318,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -40,7 +42,7 @@
     'class_key' => 'modDocument',
     'context_key' => 'web',
     'content_type' => 1,
-    'uri' => NULL,
+    'uri' => '',
     'uri_override' => 0,
     'hide_children_in_tree' => 0,
     'show_in_tree' => 1,
@@ -51,7 +53,9 @@
 <base href="http://charliga.ru/" />
 </head>
 <body>
-
+It\'s work!!!<br/>
+Hello world!!!<br/>
+<input type="button" name="empty" value="test"/>
 </body>
 </html>',
     '_isForward' => false,
