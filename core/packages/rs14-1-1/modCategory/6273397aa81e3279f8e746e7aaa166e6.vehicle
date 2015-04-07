@@ -1,0 +1,72 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Templates' => 
+    array (
+      'e4b17e7b2a7b612c705bc8bc4e9e46a4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":17,"templatename":"rs14","description":"","editor_type":0,"category":0,"icon":"","template_type":0,"content":"<!DOCTYPE html PUBLIC \\"-\\/\\/W3C\\/\\/DTD XHTML 1.0 Strict\\/\\/EN\\" \\"http:\\/\\/www.w3.org\\/TR\\/xhtml1\\/DTD\\/xhtml1-strict.dtd\\">\\n<html xmlns=\\"http:\\/\\/www.w3.org\\/1999\\/xhtml\\">\\n<head>\\n<base href=\\"[[++site_url]]\\" \\/>\\n<meta http-equiv=\\"Content-Type\\" content=\\"text\\/html; charset=utf-8\\" \\/>\\n<meta name=\\"keywords\\" content=\\"[[*introtext]]\\" \\/>\\n<meta name=\\"description\\" content=\\"[[*description]]\\" \\/>\\n<meta name=\\"robots\\" content=\\"index, follow\\" \\/>\\n<title>[[++site_name]]<\\/title>\\n<link href=\\"\\/assets\\/templates\\/rs14\\/style.css\\" rel=\\"stylesheet\\" type=\\"text\\/css\\" \\/>\\n\\n<\\/head>\\n\\n<body>\\n<div id=\\"wrap\\">\\n<div id=\\"header\\">\\n<div id=\\"logo\\">\\n<h1 id=\\"sitename\\">[[++site_name]]<\\/h1>\\n<h2 class=\\"description\\">[[$slogan]]<\\/h2>\\n<\\/div>\\n<div id=\\"headercontent\\">\\n\\n<!--Header content area-->\\n[[$headercontent]]<\\/p>\\n<p>&nbsp;<\\/p>\\n<\\/div>\\n<div id=\\"sitecption\\">\\n<!--Put a Nice Little\\n<span class=\\"bigger\\">Description<\\/span> Here-->\\n\\n<\\/div>\\n<\\/div>\\n<div id=\\"main\\">\\n<div id=\\"menus\\">\\n<div id=\\"mainmenu\\">\\n<ul>\\n<li>\\n[[!Wayfinder? &startId=`0` &level=`1`!]]\\n<\\/li>\\n<\\/ul>\\n<\\/div>\\n<div id=\\"submenu\\">\\n\\n<ul>\\n<li>\\n[[!Wayfinder? &level=2!]]\\n<\\/li>\\n<\\/ul>\\n\\n<\\/div>\\n<\\/div>\\n\\n<div id=\\"content\\">\\n<div id=\\"homeleft\\">\\n<h2>[[*pagetitle]]<\\/h2>\\n[[*content]]\\n<\\/div>\\n<div id=\\"homeright\\">\\n<!--Area right of Main content(Right content Area)-->\\n<\\/div>\\n\\n\\n<\\/div>\\n<div class=\\"clear\\"><\\/div>\\n\\n\\n\\n<\\/div>\\n\\n<div id=\\"footer\\">\\n[[++site_name]] &copy; All Rights Reserved <br \\/>\\n\\n\\n<a href=\\"http:\\/\\/ramblingsoul.com\\" title=\\"high quality free css templates\\">css template<\\/a> by ramblingsoul <\\/div>\\n\\n\\n\\n<\\/div>\\n<\\/body>\\n<\\/html>\\n","locked":0,"properties":"a:0:{}"}',
+        'guid' => '2b1e7fa7858e49b67ed4fe11ed6e1e04',
+        'native_key' => 17,
+        'signature' => '4de9bfcd1c45b68ce8f53d4809b4ea72',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'rs14',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"rs14-1-1\\/modCategory\\/6273397aa81e3279f8e746e7aaa166e6\\/0\\/","target":"return MODX_ASSETS_PATH . \'templates\\/\';","name":"rs14"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"rs14-1-1\\/modCategory\\/6273397aa81e3279f8e746e7aaa166e6\\/1\\/","target":"return \\"\\".MODX_ASSETS_PATH.\\"\\/templates\\/\\";","name":"rs14"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '95dea9a258f720abd9eb44fb9b5bd269',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '6273397aa81e3279f8e746e7aaa166e6',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"RS14"}',
+);

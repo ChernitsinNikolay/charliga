@@ -2,11 +2,17 @@
   'config' => 
   array (
   ),
+  'aliasMap' => 
+  array (
+    'index.html' => 1,
+    'about.html' => 2,
+  ),
   'resourceMap' => 
   array (
     0 => 
     array (
       0 => 1,
+      1 => 2,
     ),
   ),
   'webLinkMap' => 
