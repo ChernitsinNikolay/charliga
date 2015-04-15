@@ -2,17 +2,35 @@
   'config' => 
   array (
   ),
-  'aliasMap' => 
-  array (
-    'index.html' => 1,
-    'about.html' => 2,
-  ),
   'resourceMap' => 
   array (
     0 => 
     array (
       0 => 1,
       1 => 2,
+      2 => 3,
+      3 => 4,
+      4 => 5,
+      5 => 6,
+      6 => 7,
+      7 => 8,
+    ),
+    3 => 
+    array (
+      0 => 11,
+    ),
+    4 => 
+    array (
+      0 => 9,
+      1 => 12,
+    ),
+    5 => 
+    array (
+      0 => 13,
+    ),
+    8 => 
+    array (
+      0 => 10,
     ),
   ),
   'webLinkMap' => 
@@ -20,9 +38,210 @@
   ),
   'eventMap' => 
   array (
+    'OnDocFormPrerender' => 
+    array (
+      2 => '2',
+    ),
+    'OnSiteRefresh' => 
+    array (
+      1 => '1',
+    ),
+    'OnTVInputPropertiesList' => 
+    array (
+      2 => '2',
+    ),
+    'OnTVInputRenderList' => 
+    array (
+      2 => '2',
+    ),
+    'OnTVOutputRenderList' => 
+    array (
+      2 => '2',
+    ),
+    'OnTVOutputRenderPropertiesList' => 
+    array (
+      2 => '2',
+    ),
   ),
   'pluginCache' => 
   array (
+    1 => 
+    array (
+      'id' => '1',
+      'source' => '0',
+      'property_preprocess' => '0',
+      'name' => 'phpThumbOfCacheManager',
+      'description' => 'Handles cache cleaning when clearing the Site Cache.',
+      'editor_type' => '0',
+      'category' => '0',
+      'cache_type' => '0',
+      'plugincode' => '/**
+ * phpThumbOf
+ *
+ * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>
+ *
+ * phpThumbOf is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option) any
+ * later version.
+ *
+ * phpThumbOf is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple
+ * Place, Suite 330, Boston, MA 02111-1307 USA
+ *
+ * @package phpthumbof
+ */
+/**
+ * Handles cache management for phpthumbof filter
+ *
+ * @var \\modX $modx
+ * @var array $scriptProperties
+ *
+ * @package phpthumbof
+ */
+if (empty($results)) $results = array();
+
+switch ($modx->event->name) {
+    case \'OnSiteRefresh\':
+        if (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model/phpthumb/\',true,true)) {
+            $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class in plugin.\');
+            return;
+        }
+        $assetsPath = $modx->getOption(\'phpthumbof.assets_path\',$scriptProperties,$modx->getOption(\'assets_path\').\'components/phpthumbof/\');
+        $phpThumb = new modPhpThumb($modx);
+        $cacheDir = $assetsPath.\'cache/\';
+
+        /* clear local cache */
+        if (!empty($cacheDir)) {
+            /** @var DirectoryIterator $file */
+            foreach (new DirectoryIterator($cacheDir) as $file) {
+                if (!$file->isFile()) continue;
+                @unlink($file->getPathname());
+            }
+        }
+
+        /* if using amazon s3, clear our cache there */
+        $useS3 = $modx->getOption(\'phpthumbof.use_s3\',$scriptProperties,false);
+        if ($useS3) {
+            $modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components/phpthumbof/\').\'model/\';
+            /** @var modAws $modaws */
+            $modaws = $modx->getService(\'modaws\',\'modAws\',$modelPath.\'aws/\',$scriptProperties);
+            $s3path = $modx->getOption(\'phpthumbof.s3_path\',null,\'phpthumbof/\');
+            
+            $list = $modaws->getObjectList($s3path);
+            if (!empty($list) && is_array($list)) {
+                foreach ($list as $obj) {
+                    if (empty($obj->Key)) continue;
+
+                    $results[] = $modaws->deleteObject($obj->Key);
+                }
+            }
+        }
+
+        break;
+}
+return;',
+      'locked' => '0',
+      'properties' => NULL,
+      'disabled' => '0',
+      'moduleguid' => '',
+      'static' => '0',
+      'static_file' => '',
+    ),
+    2 => 
+    array (
+      'id' => '2',
+      'source' => '0',
+      'property_preprocess' => '0',
+      'name' => 'GalleryCustomTV',
+      'description' => '',
+      'editor_type' => '0',
+      'category' => '0',
+      'cache_type' => '0',
+      'plugincode' => '/**
+ * Handles plugin events for Gallery\'s Custom TV
+ * 
+ * @package gallery
+ */
+$corePath = $modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components/gallery/\');
+switch ($modx->event->name) {
+    case \'OnTVInputRenderList\':
+        $modx->event->output($corePath.\'elements/tv/input/\');
+        break;
+    case \'OnTVOutputRenderList\':
+        $modx->event->output($corePath.\'elements/tv/output/\');
+        break;
+    case \'OnTVInputPropertiesList\':
+        $modx->event->output($corePath.\'elements/tv/inputoptions/\');
+        break;
+    case \'OnTVOutputRenderPropertiesList\':
+        $modx->event->output($corePath.\'elements/tv/properties/\');
+        break;
+    case \'OnManagerPageBeforeRender\':
+        $gallery = $modx->getService(\'gallery\',\'Gallery\',$modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components/gallery/\').\'model/gallery/\',$scriptProperties);
+        if (!($gallery instanceof Gallery)) return \'\';
+
+        $snippetIds = \'\';
+        $gallerySnippet = $modx->getObject(\'modSnippet\',array(\'name\' => \'Gallery\'));
+        if ($gallerySnippet) {
+            $snippetIds .= \'GAL.snippetGallery = "\'.$gallerySnippet->get(\'id\').\'";\'."\\n";
+        }
+        $galleryItemSnippet = $modx->getObject(\'modSnippet\',array(\'name\' => \'GalleryItem\'));
+        if ($galleryItemSnippet) {
+            $snippetIds .= \'GAL.snippetGalleryItem = "\'.$galleryItemSnippet->get(\'id\').\'";\'."\\n";
+        }
+
+        $jsDir = $modx->getOption(\'gallery.assets_url\',null,$modx->getOption(\'assets_url\').\'components/gallery/\').\'js/mgr/\';
+        $modx->controller->addLexiconTopic(\'gallery:default\');
+        $modx->controller->addJavascript($jsDir.\'gallery.js\');
+        $modx->controller->addJavascript($jsDir.\'tree.js\');
+        $modx->controller->addHtml(\'<script type="text/javascript">
+        Ext.onReady(function() {
+            GAL.config.connector_url = "\'.$gallery->config[\'connectorUrl\'].\'";
+            \'.$snippetIds.\'
+        });
+        </script>\');
+        break;
+    case \'OnDocFormPrerender\':
+        $gallery = $modx->getService(\'gallery\',\'Gallery\',$modx->getOption(\'gallery.core_path\',null,$modx->getOption(\'core_path\').\'components/gallery/\').\'model/gallery/\',$scriptProperties);
+        if (!($gallery instanceof Gallery)) return \'\';
+
+        /* assign gallery lang to JS */
+        $modx->controller->addLexiconTopic(\'gallery:tv\');
+
+        /* @var modAction $action */
+        $action = $modx->getObject(\'modAction\',array(
+            \'namespace\' => \'gallery\',
+            \'controller\' => \'index\',
+        ));
+        $modx->controller->addHtml(\'<script type="text/javascript">
+        Ext.onReady(function() {
+            GAL.config = {};
+            GAL.config.connector_url = "\'.$gallery->config[\'connectorUrl\'].\'";
+            GAL.action = "\'.($action ? $action->get(\'id\') : 0).\'";
+        });
+        </script>\');
+        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/tv/Spotlight.js\');
+        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/gallery.js\');
+        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/widgets/album/album.items.view.js\');
+        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/widgets/album/album.tree.js\');
+        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/tv/gal.browser.js\');
+        $modx->controller->addJavascript($gallery->config[\'assetsUrl\'].\'js/mgr/tv/galtv.js\');
+        $modx->controller->addCss($gallery->config[\'cssUrl\'].\'mgr.css\');
+        break;
+}
+return;',
+      'locked' => '0',
+      'properties' => NULL,
+      'disabled' => '0',
+      'moduleguid' => '',
+      'static' => '0',
+      'static_file' => '',
+    ),
   ),
   'policies' => 
   array (

@@ -603,3 +603,4 @@
 [2015-04-06 17:25:30] (ERROR @ /var/www/charliga/core/model/modx/processors/workspace/packages/rest/getlist.class.php : 48) PHP warning: Invalid argument supplied for foreach()
 [2015-04-06 17:25:30] (ERROR @ /var/www/charliga/core/model/modx/processors/workspace/packages/rest/getlist.class.php : 52) PHP warning: Illegal string offset 'total'
 [2015-04-06 18:06:15] (ERROR @ /connectors/index.php) Could not connect to provider at: modxcms.com
+[2015-04-13 18:25:48] (ERROR @ /index.php) Could not retrieve data to cache for resource 2

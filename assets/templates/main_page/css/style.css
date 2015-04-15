@@ -2,11 +2,7 @@
   margin: 0;
   padding: 0;
 }
-.Myframe{
-    border: 1px solid #fff;
-    padding: 0 100px;
-	border-radius: 10px;
-	background: #DDA0DD;
+
 }
 body {
   width: 100%;
@@ -369,8 +365,8 @@ FOOTER наверх
  .strup {
         z-index: 1;
         position:absolute;
-	right:230px;
-	bottom:0px;
+		right:230px;
+		bottom:0px;
         height:341px;
         width:668px;
 	background: url(../images/bgup.png) no-repeat;
@@ -538,6 +534,14 @@ FOOTER наверх
                  margin-right: 0px;
        
 }
+#featured{
+	 margin-left: 20%; /* Отступ слева */
+    width: 40%; /* Ширина слоя */
+    
+    padding: 10px; /* Поля вокруг текста */
+}
+
+/*
 .demo {
   position: relative;
   padding-top: 50%;
@@ -553,6 +557,8 @@ FOOTER наверх
   max-height: 100%;
   -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
 }
+*/
+/*
 .demo label,
 .demo #vkl1:checked ~ [for="vkl1"],
 .demo #vkl2:checked ~ [for="vkl2"],
@@ -593,4 +599,7 @@ FOOTER наверх
 .demo #vkl8:checked ~ [for="vkl9"],
 .demo #vkl9:checked ~ [for="vkl10"],
 .demo #vkl10:checked ~ [for="vkl1"] {transform: translateX(0); opacity: 1;}
+*/
+
+
 

@@ -16,26 +16,9 @@
     'parent' => 0,
     'isfolder' => 0,
     'introtext' => '',
-    'content' => '<h1><i><em><p ALIGN=CENTER style="color:PURPLE">Мы рады приветствовать Вас на сайте студенческой CHEER лиги Санкт-Петербурга!</p></em></i></h1>
+    'content' => '<h1><i><em><p ALIGN=CENTER style="color:PURPLE"><font size="7">Мы рады приветствовать Вас на сайте студенческой CHEER лиги Санкт-Петербурга!</p></em></i></h1></font>
 <br>
-<font size="3" face="Arial"><br>При поддержке Российского союза молодежи и АСО России мы реализуем проект студенческой лиги по черлидингу и приглашаем Вас к участию в соревнованиях нашей лиги.</p>
-
-<br><p>Идея студенческой CHEER лиги Санкт-Петербурга в том, чтобы объединить только  студенческие команды по черлидингу в соревнования, фестивали и выезды.</p>
-<br><p>Осенью стартует первый соревновательный сезон этой лиги. В сезоне 2014-2015 мы планируем провести два турнира по черлидингу.</p>
-<br><p>Правила соревнований будут приближены к правилам спортивного черлидинга, но ориентированы на уровень начинающих команд, также будет разделение на новичков и команд уже имеющих опыт в черлидинге. К судейству помимо спортивных судей будут привлечены представители разных сфер деятельности. А затем по окончанию сезона мы будем устраивать красочный фестиваль-концерт для студентов участников CHEER лиги с приглашением творческих коллективов Санкт-Петербурга и звезд Российской эстрады. Также в фестивале могут принять участие с показательными номерами команды по черлидингу, которые по итогам сезона покажут наилучшие результаты.</p>
-
-<br><p>Команды смогут принимать участие в Городских мероприятиях, таких как: <em>день Молодежи, день Студента, Алые Паруса, день Города и д.р.</em></p>
-
-<br>Мероприятиях, которые проводятся Российским Союзом Молодежи в Санкт-Петербурге и по всей России:
-	
-		<ol type="disc"><em>
-			<li> Праздник посвященный 25 летию Российского Союза Молодежи (г. Москва)</li>
-			<li> Студенческая Весна </li>
-			<li> Студенческая Весна стран ШОС (г.Владивосток)</li>
-			<li> образовательные форумы </li>
-		</ol></em>
-<br>А также мы планируем проводить выездные мероприятия для состава нашей лиги.
-</p>
+<em><p ALIGN=CENTER><font size="5" face="Arial" style="color:Black"><br>При поддержке Российского союза молодежи и АСО России мы реализуем проект студенческой лиги по черлидингу и приглашаем Вас к участию в соревнованиях нашей лиги.</p><em>
 </font>',
     'richtext' => 1,
     'template' => 3,
@@ -45,7 +28,7 @@
     'createdby' => 1,
     'createdon' => 1426867903,
     'editedby' => 1,
-    'editedon' => 1428421277,
+    'editedon' => 1429040364,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -65,6 +48,14 @@
     'hide_children_in_tree' => 0,
     'show_in_tree' => 1,
     'properties' => NULL,
+    'image' => 
+    array (
+      0 => 'image',
+      1 => '',
+      2 => 'default',
+      3 => NULL,
+      4 => 'image',
+    ),
     '_content' => '<!DOCTYPE html>
 <html>
 <head>
@@ -104,29 +95,7 @@ $(function() {
 <header class="header">
 
 <div id="headerInner">
-<!--
-<nav class="topMenuRight">
-      
-    <ul>
-    <li><a href="#">Страница 1</a></li>
-    <li><a href="#">Страница 2</a></li>
-    <li><a href="#">Страница 3</a></li>
-    <li><a href="#">Страница 4</a></li>
-    </ul>
-    
-</nav> 
--->
 
-<!--
-<div class="share-new">
-
-<a class="icon-twitter" href="#" title="Следить в Twitter!" target="_blank"></a>
-<a class="icon-rss" href="#" title="Подписаться на rss"  target="_blank"></a>
-<a class="icon-mail" href="#" title="Подписаться по e-mail"  target="_blank"></a>
-
-</div>
-
--->
 
 
 <div class="logo">
@@ -135,227 +104,76 @@ $(function() {
 
 <!-- Начало #bottomMenu -->
 <nav class="bottomMenu">
-[[!Wayfinder? &startId=`0` &outerTpl=`MainMenuOuterTpl`]]
-		<!--FIXME OLD<ul class="top-menu" id="dropdown_nav">
-			<li><a href="/home/">Главная страница</a></li>
-			<li class="active"><a>О нас</a></li>
-			<li><a href="/teams/">Команды</a></li>
-			<li><a href="/news/">Новости</a></li>
-			<li><a href="/foto/">Фотоальбом</a></li>
-			<li><a href="/video/">Видеоархив</a></li>
-			<li><a href="/contact/">Контакты</a></li>
-	<!--<li><a href="Home">Главная страница</a></li>
-			 <ul class="sub_nav"> 
-				<li><a href="#">Подменю #1</a></li>
-				<li><a href="#">Подменю #2</a></li>
-				<li><a href="#">Подменю #3</a></li>
-				<li><a href="#">Подменю #4</a></li>
-			</ul>
-	-->
-		</ul>-->
+
+[[!Wayfinder? 
+&startId=`0` 
+&outerTpl=`MainMenuOuterTpl`]]
+
 </nav><!-- конец #bottomMenu -->
 
 </div>
 </header><!-- Конец хидер -->
-<!--
-<div id="lpblock">
 
-<h2>Последние записи</h2>
-
-</div>
--->
-
-<!-- начало врапер -->
 
 <section id="wrapper">
 <div id="middle">
 <div id="content">
-<div id="colLeft">
+<div id="colTopLeft">
+<link rel="stylesheet" href="assets/templates/main_page/css/orbit.css">	
 
+		<script type="text/javascript" src="assets/templates/main_page/js/jquery-1.4.1.min.js"></script>
+		<script type="text/javascript" src="assets/templates/main_page/js/jquery.orbit.min.js"></script>
+		
+		<!-- Run the plugin -->
+		<script type="text/javascript">
+			$(window).load(function() {
+				$(\'#featured\').orbit({
+					\'bullets\': true,
+					\'timer\' : true,
+					\'animation\' : \'horizontal-slide\'
+				});
+			});
+		</script>
+				<div id="featured" style="text-align: center;"> 
+			<img src="assets/templates/main_page/images/slayd1.png" alt="slayd1"  width ="900px" style="text-align: center;"/>
+			<img src="assets/templates/main_page/images/slayd2.png" alt="slayd2" width ="900px" style="text-align: center;"/>
+			<img src="assets/templates/main_page/images/slayd3.png" alt="slayd3" width ="900px"/>
+			<img src="assets/templates/main_page/images/slayd4.png" alt="slayd4" width ="900px"/>
+			<img src="assets/templates/main_page/images/slayd5.png" alt="slayd5" width ="900px"/>
+			<img src="assets/templates/main_page/images/slayd6.png" alt="slayd6" width ="900px"/>			
+			<img src="assets/templates/main_page/images/slayd7.png" alt="slayd7" width ="900px"/>			
+			<img src="assets/templates/main_page/images/slayd8.png" alt="slayd8" width ="900px"/>			
+			<img src="assets/templates/main_page/images/slayd9.png" alt="slayd9" width ="900px"/>			
+			<img src="assets/templates/main_page/images/slayd10.png" alt="slayd10" width ="900px"/>			
+		</div> 
 
-<div class="demo">
-<input type="radio" name="odin" id="vkl1"/>
-<input type="radio" name="odin" id="vkl2"/>
-<input type="radio" name="odin" id="vkl3"/>
-<input type="radio" name="odin" id="vkl4"/>
-<input type="radio" name="odin" id="vkl5"/>
-<input type="radio" name="odin" id="vkl6"/>
-<input type="radio" name="odin" id="vkl7"/>
-<input type="radio" name="odin" id="vkl8"/>
-<input type="radio" name="odin" id="vkl9"/>
-<input type="radio" name="odin" id="vkl10" checked="checked"/>
-
-<label for="vkl1"><img src="assets/templates/main_page/images/slayd1.png"/></label>
-<label for="vkl2"><img src="assets/templates/main_page/images/slayd2.png"/></label>
-<label for="vkl3"><img src="assets/templates/main_page/images/slayd3.png"/></label>
-<label for="vkl4"><img src="assets/templates/main_page/images/slayd4.png"/></label>
-<label for="vkl5"><img src="assets/templates/main_page/images/slayd5.png"/></label>
-<label for="vkl6"><img src="assets/templates/main_page/images/slayd6.png"/></label>
-<label for="vkl7"><img src="assets/templates/main_page/images/slayd7.png"/></label>
-<label for="vkl8"><img src="assets/templates/main_page/images/slayd8.png"/></label>
-<label for="vkl9"><img src="assets/templates/main_page/images/slayd9.png"/></label>
-<label for="vkl10"><img src="assets/templates/main_page/images/slayd10.png"/></label>
 </div>
-
+<div id="colDownLeft">
 <br>
 <div class="Myframe">
-<h1><i><em><p ALIGN=CENTER style="color:PURPLE">Мы рады приветствовать Вас на сайте студенческой CHEER лиги Санкт-Петербурга!</p></em></i></h1>
+<h1><i><em><p ALIGN=CENTER style="color:PURPLE"><font size="7">Мы рады приветствовать Вас на сайте студенческой CHEER лиги Санкт-Петербурга!</p></em></i></h1></font>
 <br>
-<font size="3" face="Arial"><br>При поддержке Российского союза молодежи и АСО России мы реализуем проект студенческой лиги по черлидингу и приглашаем Вас к участию в соревнованиях нашей лиги.</p>
-
-<br><p>Идея студенческой CHEER лиги Санкт-Петербурга в том, чтобы объединить только  студенческие команды по черлидингу в соревнования, фестивали и выезды.</p>
-<br><p>Осенью стартует первый соревновательный сезон этой лиги. В сезоне 2014-2015 мы планируем провести два турнира по черлидингу.</p>
-<br><p>Правила соревнований будут приближены к правилам спортивного черлидинга, но ориентированы на уровень начинающих команд, также будет разделение на новичков и команд уже имеющих опыт в черлидинге. К судейству помимо спортивных судей будут привлечены представители разных сфер деятельности. А затем по окончанию сезона мы будем устраивать красочный фестиваль-концерт для студентов участников CHEER лиги с приглашением творческих коллективов Санкт-Петербурга и звезд Российской эстрады. Также в фестивале могут принять участие с показательными номерами команды по черлидингу, которые по итогам сезона покажут наилучшие результаты.</p>
-
-<br><p>Команды смогут принимать участие в Городских мероприятиях, таких как: <em>день Молодежи, день Студента, Алые Паруса, день Города и д.р.</em></p>
-
-<br>Мероприятиях, которые проводятся Российским Союзом Молодежи в Санкт-Петербурге и по всей России:
-	
-		<ol type="disc"><em>
-			<li> Праздник посвященный 25 летию Российского Союза Молодежи (г. Москва)</li>
-			<li> Студенческая Весна </li>
-			<li> Студенческая Весна стран ШОС (г.Владивосток)</li>
-			<li> образовательные форумы </li>
-		</ol></em>
-<br>А также мы планируем проводить выездные мероприятия для состава нашей лиги.
-</p>
+<em><p ALIGN=CENTER><font size="5" face="Arial" style="color:Black"><br>При поддержке Российского союза молодежи и АСО России мы реализуем проект студенческой лиги по черлидингу и приглашаем Вас к участию в соревнованиях нашей лиги.</p><em>
 </font>
 </div>
-<!-- Начало .postBox -->
-<!--<article class="postBox">
 
-<div class="postThumb"><a href="#"><img width="800" height="300" src="images/tumb.png"/></a></div>
-
-<h2><a href="#">Скачать бесплатно 15 HTML5 и CSS3 шаблонов</a></h2> 
-
-<div class="info"> 
-Александр // <a href="#">Метки: метка, метка 2</a> // Апр.10.2012. // Комментариев: <a href="#">238</a>
-</div>
-
-<div class="textPreview">
-
-<p>Приветствую Вас, уважаемые читатели блога. Сегодня спешу представить Вам очередную бесплатную подборку шаблонов на CSS3 и HTML5, а также здесь есть несколько шаблонов с большими и встроенными JQuery слайдерами изображений. В общем, я надеюсь, что Вы здесь найдёте то что Вам нужно. Наслаждайтесь.</p>
-</div>
-
-<div class="more-link"><a href="#">Далее</a></div>
-
-</article>
-<!-- Конец .postBox -->
-
-<!--<div class="raz"></div>
-
-<!-- Начало .postBox -->
-<!--<article class="postBox">
-
-<div class="postThumb"><a href="#"><img width="800" height="300" src="images/tumb.png"/></a></div>
-
-<h2><a href="#">Скачать бесплатно 15 HTML5 и CSS3 шаблонов</a></h2> 
-
-<div class="info"> 
-Александр // <a href="#">Метки: метка, метка 2</a> // Апр.10.2012. // Комментариев: <a href="#">238</a>
-</div>
-
-<div class="textPreview">
-
-<p>Приветствую Вас, уважаемые читатели блога. Сегодня спешу представить Вам очередную бесплатную подборку шаблонов на CSS3 и HTML5, а также здесь есть несколько шаблонов с большими и встроенными JQuery слайдерами изображений. В общем, я надеюсь, что Вы здесь найдёте то что Вам нужно. Наслаждайтесь.</p>
-</div>
-
-<div class="more-link"><a href="#">Далее</a></div>
-
-</article>
-<!-- Конец .postBox -->
-<!--<div class="raz"></div>
-
-<!-- Начало .postBox -->
-<!--<article class="postBox">
-
-<div class="postThumb"><a href="#"><img width="800" height="300" src="images/tumb.png"/></a></div>
-
-<h2><a href="#">Скачать бесплатно 15 HTML5 и CSS3 шаблонов</a></h2> 
-
-<div class="info"> 
-Александр // <a href="#">Метки: метка, метка 2</a> // Апр.10.2012. // Комментариев: <a href="#">238</a>
-</div>
-
-<div class="textPreview">
-
-<p>Приветствую Вас, уважаемые читатели блога. Сегодня спешу представить Вам очередную бесплатную подборку шаблонов на CSS3 и HTML5, а также здесь есть несколько шаблонов с большими и встроенными JQuery слайдерами изображений. В общем, я надеюсь, что Вы здесь найдёте то что Вам нужно. Наслаждайтесь.</p>
-</div>
-
-<div class="more-link"><a href="#">Далее</a></div>
-
-</article>
-<!-- Конец .postBox -->
-
-<!--<div class="raz"></div>
-
-<!-- Начало .postBox -->
-<!--<article class="postBox">
-
-<div class="postThumb"><a href="#"><img width="800" height="300" src="images/tumb.png"/></a></div>
-
-<h2><a href="#">Скачать бесплатно 15 HTML5 и CSS3 шаблонов</a></h2> 
-
-<div class="info"> 
-Александр // <a href="#">Метки: метка, метка 2</a> // Апр.10.2012. // Комментариев: <a href="#">238</a>
-</div>
-
-<div class="textPreview">
-
-<p>Приветствую Вас, уважаемые читатели блога. Сегодня спешу представить Вам очередную бесплатную подборку шаблонов на CSS3 и HTML5, а также здесь есть несколько шаблонов с большими и встроенными JQuery слайдерами изображений. В общем, я надеюсь, что Вы здесь найдёте то что Вам нужно. Наслаждайтесь.</p>
-</div>
-
-<div class="more-link"><a href="#">Далее</a></div>
-
-</article>
-<!-- Конец .postBox -->
-
-<!--<div class="raz"></div>-->
 
 </div><!-- Конец коллефт -->
 
 <aside id="colRight">
-
-<form  method="get" action="/search" target="_blank">
-<input name="q" id="form-query" value="" placeholder="Поиск..."> 
-<input id="form-querysub" type=submit value="">
-</form>
-
 <div class="rightBox">
 
 <h2>Новости</h2>		
-<ul>
-				
-<li><a href="http://beloweb.ru/novichkam/plavnaya-animatsiya-obektov-tolko-s-pomoshhyu-css.html" title="Плавная анимация объектов только с помощью CSS (5 примеров)">Плавная анимация объектов только с помощью CSS (5 примеров)</a></li>
-				
-                                <li><a href="http://beloweb.ru/shablonyi/skachat-besplatno-15-html5-i-css3-shablonov-dlya-vashih-novyih-idey-i-veb-proektov.html" title="Скачать бесплатно 15 HTML5 и CSS3 шаблонов для Ваших новых идей и веб &#8211; проектов">Скачать бесплатно 15 HTML5 и CSS3 шаблонов для Ваших новых идей и веб &#8211; проектов</a></li>
-				
-                                <li><a href="http://beloweb.ru/javascript-jquery/besplatnyie-vsplyivayushhie-i-modalnyie-okna-s-ispolzovaniem-css3-ijquery.html" title="Бесплатные всплывающие и модальные окна с использованием CSS3 и JQuery">Бесплатные всплывающие и модальные окна с использованием CSS3 и JQuery</a></li>
-				<li><a href="http://beloweb.ru/dizayn-sayta/500-besplatnyih-photoshop-figur-dlya-vashih-novyih-proektov.html" title="500+ бесплатных Photoshop фигур (Shapes) для Ваших новых проектов">500+ бесплатных Photoshop фигур (Shapes) для Ваших новых проектов</a></li>
-				<li><a href="http://beloweb.ru/dizayn-sayta/besplatnyie-psd-i-css3-menyu-dlya-vashego-veb-proekta.html" title="Бесплатные PSD и CSS3 меню для Вашего веб проекта">Бесплатные PSD и CSS3 меню для Вашего веб проекта</a></li>
-				<li><a href="http://beloweb.ru/shablonyi/besplatnyie-css-i-xhtml-shablonyi-s-tyomnyim-dizaynom-dlya-vashih-proektov.html" title="Бесплатные CSS и xHTML шаблоны с тёмным дизайном для Ваших проектов">Бесплатные CSS и xHTML шаблоны с тёмным дизайном для Ваших проектов</a></li>
-				</ul>
+<ul>		
+[[!getPage@articlePaging? 
+&element=`getResources` 
+&parents=`4` 
+&showHidden=`1`
+&tpl=`articleTpl` 
+&includeTVs=`1`
+&limit=`3`]]
+</ul>
                       </div>
-
-<div class="rightBox">
-
-<h2>Ближайшие события</h2>		
-<ul>
-				
-<li><a href="http://beloweb.ru/novichkam/plavnaya-animatsiya-obektov-tolko-s-pomoshhyu-css.html" title="Плавная анимация объектов только с помощью CSS (5 примеров)">Плавная анимация объектов только с помощью CSS (5 примеров)</a></li>
-				
-                                <li><a href="http://beloweb.ru/shablonyi/skachat-besplatno-15-html5-i-css3-shablonov-dlya-vashih-novyih-idey-i-veb-proektov.html" title="Скачать бесплатно 15 HTML5 и CSS3 шаблонов для Ваших новых идей и веб &#8211; проектов">Скачать бесплатно 15 HTML5 и CSS3 шаблонов для Ваших новых идей и веб &#8211; проектов</a></li>
-				
-                                <li><a href="http://beloweb.ru/javascript-jquery/besplatnyie-vsplyivayushhie-i-modalnyie-okna-s-ispolzovaniem-css3-ijquery.html" title="Бесплатные всплывающие и модальные окна с использованием CSS3 и JQuery">Бесплатные всплывающие и модальные окна с использованием CSS3 и JQuery</a></li>
-				<li><a href="http://beloweb.ru/dizayn-sayta/500-besplatnyih-photoshop-figur-dlya-vashih-novyih-proektov.html" title="500+ бесплатных Photoshop фигур (Shapes) для Ваших новых проектов">500+ бесплатных Photoshop фигур (Shapes) для Ваших новых проектов</a></li>
-				<li><a href="http://beloweb.ru/dizayn-sayta/besplatnyie-psd-i-css3-menyu-dlya-vashego-veb-proekta.html" title="Бесплатные PSD и CSS3 меню для Вашего веб проекта">Бесплатные PSD и CSS3 меню для Вашего веб проекта</a></li>
-				<li><a href="http://beloweb.ru/interesno/primeryi-igr-kotoryie-sdelannyie-s-pomoshhyu-html5-canvas.html" title="Примеры игр которые сделанные с помощью html5 canvas">Примеры игр которые сделанные с помощью html5 canvas</a></li>
-				<li><a href="http://beloweb.ru/shablonyi/besplatnyie-css-i-xhtml-shablonyi-s-tyomnyim-dizaynom-dlya-vashih-proektov.html" title="Бесплатные CSS и xHTML шаблоны с тёмным дизайном для Ваших проектов">Бесплатные CSS и xHTML шаблоны с тёмным дизайном для Ваших проектов</a></li>
-				</ul>
-			
-
-                      </div>
-
 
 </aside><!-- Конец колрайт -->
 </div><!-- Конец контент -->
@@ -387,24 +205,14 @@ $(function() {
 <a href="#"><img src="assets/templates/main_page/images/sp5.png" alt="Блог" /></a>
 </div>
 
-<!--
-<nav class="footernav">
-      
-    <ul>
-    <li><a href="#">Страница 1</a></li>
-    <li><a href="#">Страница 2</a></li>
-    <li><a href="#">Страница 3</a></li>
-    <li><a href="#">Страница 4</a></li>
-    </ul>
-    
-</nav> 
+
 -->
 </div><!-- Конец футериннер -->
 </footer>
 <!-- Конец футер -->
+
 </body>
-</html>
-',
+</html>',
     '_isForward' => false,
   ),
   'contentType' => 
@@ -423,11 +231,137 @@ $(function() {
   'elementCache' => 
   array (
     '[[*pagetitle]]' => 'Главная страница',
+    '[[$footer]]' => '<!-- Начало футер -->
+
+<footer id="footer">
+<div id="footerInner">
+
+
+<footer id="footer">
+<div id="footerInner">
+
+<div id="footerlogo1">
+<a href="#"><img src="assets/templates/main_page/images/sp1.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo2">
+<a href="#"><img src="assets/templates/main_page/images/sp2.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo3">
+<a href="#"><img src="assets/templates/main_page/images/sp3.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo4">
+<a href="#"><img src="assets/templates/main_page/images/sp4.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo5">
+<a href="#"><img src="assets/templates/main_page/images/sp5.png" alt="Блог" /></a>
+</div>
+
+
+-->
+</div><!-- Конец футериннер -->
+</footer>
+<!-- Конец футер -->',
+    '[[~12]]' => 'index.php?id=12',
+    '[[~9]]' => 'index.php?id=9',
   ),
   'sourceCache' => 
   array (
     'modChunk' => 
     array (
+      'footer' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 4,
+          'source' => 1,
+          'property_preprocess' => false,
+          'name' => 'footer',
+          'description' => '',
+          'editor_type' => 0,
+          'category' => 2,
+          'cache_type' => 0,
+          'snippet' => '<!-- Начало футер -->
+
+<footer id="footer">
+<div id="footerInner">
+
+
+<footer id="footer">
+<div id="footerInner">
+
+<div id="footerlogo1">
+<a href="#"><img src="assets/templates/main_page/images/sp1.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo2">
+<a href="#"><img src="assets/templates/main_page/images/sp2.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo3">
+<a href="#"><img src="assets/templates/main_page/images/sp3.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo4">
+<a href="#"><img src="assets/templates/main_page/images/sp4.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo5">
+<a href="#"><img src="assets/templates/main_page/images/sp5.png" alt="Блог" /></a>
+</div>
+
+
+-->
+</div><!-- Конец футериннер -->
+</footer>
+<!-- Конец футер -->',
+          'locked' => false,
+          'properties' => 
+          array (
+          ),
+          'static' => false,
+          'static_file' => '',
+          'content' => '<!-- Начало футер -->
+
+<footer id="footer">
+<div id="footerInner">
+
+
+<footer id="footer">
+<div id="footerInner">
+
+<div id="footerlogo1">
+<a href="#"><img src="assets/templates/main_page/images/sp1.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo2">
+<a href="#"><img src="assets/templates/main_page/images/sp2.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo3">
+<a href="#"><img src="assets/templates/main_page/images/sp3.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo4">
+<a href="#"><img src="assets/templates/main_page/images/sp4.png" alt="Блог" /></a>
+</div>
+<div id="footerlogo5">
+<a href="#"><img src="assets/templates/main_page/images/sp5.png" alt="Блог" /></a>
+</div>
+
+
+-->
+</div><!-- Конец футериннер -->
+</footer>
+<!-- Конец футер -->',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+          'id' => 1,
+          'name' => 'Filesystem',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+          ),
+          'is_stream' => true,
+        ),
+      ),
     ),
     'modSnippet' => 
     array (
@@ -1324,6 +1258,638 @@ if ($wf->_config[\'ph\']) {
 } else {
     return $output;
 }',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+        ),
+      ),
+      'getPage' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 4,
+          'source' => 0,
+          'property_preprocess' => false,
+          'name' => 'getPage',
+          'description' => '<b>1.2.4-pl</b> A generic wrapper snippet for returning paged results and navigation from snippets that return limitable collections.',
+          'editor_type' => 0,
+          'category' => 0,
+          'cache_type' => 0,
+          'snippet' => '/**
+ * @package getpage
+ */
+$output = \'\';
+
+$properties =& $scriptProperties;
+$properties[\'page\'] = (isset($_GET[$properties[\'pageVarKey\']]) && ($page = intval($_GET[$properties[\'pageVarKey\']]))) ? $page : null;
+if ($properties[\'page\'] === null) {
+    $properties[\'page\'] = (isset($_REQUEST[$properties[\'pageVarKey\']]) && ($page = intval($_REQUEST[$properties[\'pageVarKey\']]))) ? $page : 1;
+}
+$properties[\'limit\'] = (isset($_GET[\'limit\'])) ? intval($_GET[\'limit\']) : null;
+if ($properties[\'limit\'] === null) {
+    $properties[\'limit\'] = (isset($_REQUEST[\'limit\'])) ? intval($_REQUEST[\'limit\']) : intval($limit);
+}
+$properties[\'offset\'] = (!empty($properties[\'limit\']) && !empty($properties[\'page\'])) ? ($properties[\'limit\'] * ($properties[\'page\'] - 1)) : 0;
+$properties[\'totalVar\'] = empty($totalVar) ? "total" : $totalVar;
+$properties[$properties[\'totalVar\']] = !empty($properties[$properties[\'totalVar\']]) && $total = intval($properties[$properties[\'totalVar\']]) ? $total : 0;
+$properties[\'pageOneLimit\'] = (!empty($pageOneLimit) && $pageOneLimit = intval($pageOneLimit)) ? $pageOneLimit : $properties[\'limit\'];
+$properties[\'actualLimit\'] = $properties[\'limit\'];
+$properties[\'pageLimit\'] = isset($pageLimit) && is_numeric($pageLimit) ? intval($pageLimit) : 5;
+$properties[\'element\'] = empty($element) ? \'\' : $element;
+$properties[\'elementClass\'] = empty($elementClass) ? \'modChunk\' : $elementClass;
+$properties[\'pageNavVar\'] = empty($pageNavVar) ? \'page.nav\' : $pageNavVar;
+$properties[\'pageNavTpl\'] = !isset($pageNavTpl) ? "<li[[+classes]]><a[[+classes]][[+title]] href=\\"[[+href]]\\">[[+pageNo]]</a></li>" : $pageNavTpl;
+$properties[\'pageNavOuterTpl\'] = !isset($pageNavOuterTpl) ? "[[+first]][[+prev]][[+pages]][[+next]][[+last]]" : $pageNavOuterTpl;
+$properties[\'pageActiveTpl\'] = !isset($pageActiveTpl) ? "<li[[+activeClasses:default=` class=\\"active\\"`]]><a[[+activeClasses:default=` class=\\"active\\"`]][[+title]] href=\\"[[+href]]\\">[[+pageNo]]</a></li>" : $pageActiveTpl;
+$properties[\'pageFirstTpl\'] = !isset($pageFirstTpl) ? "<li class=\\"control\\"><a[[+title]] href=\\"[[+href]]\\">First</a></li>" : $pageFirstTpl;
+$properties[\'pageLastTpl\'] = !isset($pageLastTpl) ? "<li class=\\"control\\"><a[[+title]] href=\\"[[+href]]\\">Last</a></li>" : $pageLastTpl;
+$properties[\'pagePrevTpl\'] = !isset($pagePrevTpl) ? "<li class=\\"control\\"><a[[+title]] href=\\"[[+href]]\\">&lt;&lt;</a></li>" : $pagePrevTpl;
+$properties[\'pageNextTpl\'] = !isset($pageNextTpl) ? "<li class=\\"control\\"><a[[+title]] href=\\"[[+href]]\\">&gt;&gt;</a></li>" : $pageNextTpl;
+$properties[\'toPlaceholder\'] = !empty($toPlaceholder) ? $toPlaceholder : \'\';
+$properties[\'cache\'] = isset($cache) ? (boolean) $cache : (boolean) $modx->getOption(\'cache_resource\', null, false);
+if (empty($cache_key)) $properties[xPDO::OPT_CACHE_KEY] = $modx->getOption(\'cache_resource_key\', null, \'resource\');
+if (empty($cache_handler)) $properties[xPDO::OPT_CACHE_HANDLER] = $modx->getOption(\'cache_resource_handler\', null, \'xPDOFileCache\');
+if (empty($cache_expires)) $properties[xPDO::OPT_CACHE_EXPIRES] = (integer) $modx->getOption(\'cache_resource_expires\', null, 0);
+
+if ($properties[\'page\'] == 1 && $properties[\'pageOneLimit\'] !== $properties[\'actualLimit\']) {
+    $properties[\'limit\'] = $properties[\'pageOneLimit\'];
+}
+
+if ($properties[\'cache\']) {
+    $properties[\'cachePageKey\'] = $modx->resource->getCacheKey() . \'/\' . $properties[\'page\'] . \'/\' . md5(http_build_query($modx->request->getParameters()) . http_build_query($scriptProperties));
+    $properties[\'cacheOptions\'] = array(
+        xPDO::OPT_CACHE_KEY => $properties[xPDO::OPT_CACHE_KEY],
+        xPDO::OPT_CACHE_HANDLER => $properties[xPDO::OPT_CACHE_HANDLER],
+        xPDO::OPT_CACHE_EXPIRES => $properties[xPDO::OPT_CACHE_EXPIRES],
+    );
+}
+$cached = false;
+if ($properties[\'cache\']) {
+    if ($modx->getCacheManager()) {
+        $cached = $modx->cacheManager->get($properties[\'cachePageKey\'], $properties[\'cacheOptions\']);
+    }
+}
+if (empty($cached) || !isset($cached[\'properties\']) || !isset($cached[\'output\'])) {
+    $elementObj = $modx->getObject($properties[\'elementClass\'], array(\'name\' => $properties[\'element\']));
+    if ($elementObj) {
+        $elementObj->setCacheable(false);
+        if (!empty($properties[\'toPlaceholder\'])) {
+            $elementObj->process($properties);
+            $output = $modx->getPlaceholder($properties[\'toPlaceholder\']);
+        } else {
+            $output = $elementObj->process($properties);
+        }
+    }
+
+    include_once $modx->getOption(\'getpage.core_path\',$properties,$modx->getOption(\'core_path\', $properties, MODX_CORE_PATH) . \'components/getpage/\').\'include.getpage.php\';
+
+    $qs = $modx->request->getParameters();
+    $properties[\'qs\'] =& $qs;
+
+    $totalSet = $modx->getPlaceholder($properties[\'totalVar\']);
+    $properties[$properties[\'totalVar\']] = (($totalSet = intval($totalSet)) ? $totalSet : $properties[$properties[\'totalVar\']]);
+    if (!empty($properties[$properties[\'totalVar\']]) && !empty($properties[\'actualLimit\'])) {
+        if ($properties[\'pageOneLimit\'] !== $properties[\'actualLimit\']) {
+            $adjustedTotal = $properties[$properties[\'totalVar\']] - $properties[\'pageOneLimit\'];
+            $properties[\'pageCount\'] = $adjustedTotal > 0 ? ceil($adjustedTotal / $properties[\'actualLimit\']) + 1 : 1;
+        } else {
+            $properties[\'pageCount\'] = ceil($properties[$properties[\'totalVar\']] / $properties[\'actualLimit\']);
+        }
+    } else {
+        $properties[\'pageCount\'] = 1;
+    }
+    if (empty($properties[$properties[\'totalVar\']]) || empty($properties[\'actualLimit\']) || $properties[$properties[\'totalVar\']] <= $properties[\'actualLimit\'] || ($properties[\'page\'] == 1 && $properties[$properties[\'totalVar\']] <= $properties[\'pageOneLimit\'])) {
+        $properties[\'page\'] = 1;
+    } else {
+        $pageNav = getpage_buildControls($modx, $properties);
+        $properties[$properties[\'pageNavVar\']] = $modx->newObject(\'modChunk\')->process(array_merge($properties, $pageNav), $properties[\'pageNavOuterTpl\']);
+        if ($properties[\'page\'] > 1) {
+            $qs[$properties[\'pageVarKey\']] = $properties[\'page\'];
+        }
+    }
+
+    $properties[\'firstItem\'] = $properties[\'offset\'] + 1;
+    $properties[\'lastItem\'] = ($properties[\'offset\'] + $properties[\'limit\']) < $totalSet ? ($properties[\'offset\'] + $properties[\'limit\']) : $totalSet;
+
+    $properties[\'pageUrl\'] = $modx->makeUrl($modx->resource->get(\'id\'), \'\', $qs);
+    if ($properties[\'cache\'] && $modx->getCacheManager()) {
+        $cached = array(\'properties\' => $properties, \'output\' => $output);
+        $modx->cacheManager->set($properties[\'cachePageKey\'], $cached, $properties[xPDO::OPT_CACHE_EXPIRES], $properties[\'cacheOptions\']);
+    }
+} else {
+    $properties = $cached[\'properties\'];
+    $output = $cached[\'output\'];
+}
+$modx->setPlaceholders($properties, $properties[\'namespace\']);
+if (!empty($properties[\'toPlaceholder\'])) {
+    $modx->setPlaceholder($properties[\'toPlaceholder\'], $output);
+    $output = \'\';
+}
+
+return $output;',
+          'locked' => false,
+          'properties' => 
+          array (
+            'namespace' => 
+            array (
+              'name' => 'namespace',
+              'desc' => 'An execution namespace that serves as a prefix for placeholders set by a specific instance of the getPage snippet.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'An execution namespace that serves as a prefix for placeholders set by a specific instance of the getPage snippet.',
+              'area_trans' => '',
+            ),
+            'limit' => 
+            array (
+              'name' => 'limit',
+              'desc' => 'The result limit per page; can be overridden in the $_REQUEST.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '10',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The result limit per page; can be overridden in the $_REQUEST.',
+              'area_trans' => '',
+            ),
+            'offset' => 
+            array (
+              'name' => 'offset',
+              'desc' => 'The offset, or record position to start at within the collection for rendering results for the current page; should be calculated based on page variable set in pageVarKey.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '0',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The offset, or record position to start at within the collection for rendering results for the current page; should be calculated based on page variable set in pageVarKey.',
+              'area_trans' => '',
+            ),
+            'page' => 
+            array (
+              'name' => 'page',
+              'desc' => 'The page to display; this is determined based on the value indicated by the page variable set in pageVarKey, typically in the $_REQUEST.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '0',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The page to display; this is determined based on the value indicated by the page variable set in pageVarKey, typically in the $_REQUEST.',
+              'area_trans' => '',
+            ),
+            'pageVarKey' => 
+            array (
+              'name' => 'pageVarKey',
+              'desc' => 'The key of a property that indicates the current page.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => 'page',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The key of a property that indicates the current page.',
+              'area_trans' => '',
+            ),
+            'totalVar' => 
+            array (
+              'name' => 'totalVar',
+              'desc' => 'The key of a placeholder that must contain the total records in the limitable collection being paged.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => 'total',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The key of a placeholder that must contain the total records in the limitable collection being paged.',
+              'area_trans' => '',
+            ),
+            'pageLimit' => 
+            array (
+              'name' => 'pageLimit',
+              'desc' => 'The maximum number of pages to display when rendering paging controls',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '5',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The maximum number of pages to display when rendering paging controls',
+              'area_trans' => '',
+            ),
+            'elementClass' => 
+            array (
+              'name' => 'elementClass',
+              'desc' => 'The class of element that will be called by the getPage snippet instance.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => 'modSnippet',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The class of element that will be called by the getPage snippet instance.',
+              'area_trans' => '',
+            ),
+            'pageNavVar' => 
+            array (
+              'name' => 'pageNavVar',
+              'desc' => 'The key of a placeholder to be set with the paging navigation controls.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => 'page.nav',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The key of a placeholder to be set with the paging navigation controls.',
+              'area_trans' => '',
+            ),
+            'pageNavTpl' => 
+            array (
+              'name' => 'pageNavTpl',
+              'desc' => 'Content representing a single page navigation control.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '<li[[+classes]]><a[[+classes]][[+title]] href="[[+href]]">[[+pageNo]]</a></li>',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'Content representing a single page navigation control.',
+              'area_trans' => '',
+            ),
+            'pageNavOuterTpl' => 
+            array (
+              'name' => 'pageNavOuterTpl',
+              'desc' => 'Content representing the layout of the page navigation controls.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '[[+first]][[+prev]][[+pages]][[+next]][[+last]]',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'Content representing the layout of the page navigation controls.',
+              'area_trans' => '',
+            ),
+            'pageActiveTpl' => 
+            array (
+              'name' => 'pageActiveTpl',
+              'desc' => 'Content representing the current page navigation control.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '<li[[+activeClasses]]><a[[+activeClasses:default=` class="active"`]][[+title]] href="[[+href]]">[[+pageNo]]</a></li>',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'Content representing the current page navigation control.',
+              'area_trans' => '',
+            ),
+            'pageFirstTpl' => 
+            array (
+              'name' => 'pageFirstTpl',
+              'desc' => 'Content representing the first page navigation control.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '<li class="control"><a[[+classes]][[+title]] href="[[+href]]">First</a></li>',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'Content representing the first page navigation control.',
+              'area_trans' => '',
+            ),
+            'pageLastTpl' => 
+            array (
+              'name' => 'pageLastTpl',
+              'desc' => 'Content representing the last page navigation control.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '<li class="control"><a[[+classes]][[+title]] href="[[+href]]">Last</a></li>',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'Content representing the last page navigation control.',
+              'area_trans' => '',
+            ),
+            'pagePrevTpl' => 
+            array (
+              'name' => 'pagePrevTpl',
+              'desc' => 'Content representing the previous page navigation control.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '<li class="control"><a[[+classes]][[+title]] href="[[+href]]">&lt;&lt;</a></li>',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'Content representing the previous page navigation control.',
+              'area_trans' => '',
+            ),
+            'pageNextTpl' => 
+            array (
+              'name' => 'pageNextTpl',
+              'desc' => 'Content representing the next page navigation control.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '<li class="control"><a[[+classes]][[+title]] href="[[+href]]">&gt;&gt;</a></li>',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'Content representing the next page navigation control.',
+              'area_trans' => '',
+            ),
+            'cache' => 
+            array (
+              'name' => 'cache',
+              'desc' => 'If true, unique page requests will be cached according to addition cache properties.',
+              'type' => 'combo-boolean',
+              'options' => '',
+              'value' => false,
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'If true, unique page requests will be cached according to addition cache properties.',
+              'area_trans' => '',
+            ),
+            'cache_key' => 
+            array (
+              'name' => 'cache_key',
+              'desc' => 'The key of the cache provider to use; leave empty to use the cache_resource_key cache partition (default is "resource").',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => false,
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The key of the cache provider to use; leave empty to use the cache_resource_key cache partition (default is "resource").',
+              'area_trans' => '',
+            ),
+            'cache_handler' => 
+            array (
+              'name' => 'cache_handler',
+              'desc' => 'The cache provider implementation to use; leave empty unless you are caching to a custom cache_key.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => false,
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The cache provider implementation to use; leave empty unless you are caching to a custom cache_key.',
+              'area_trans' => '',
+            ),
+            'cache_expires' => 
+            array (
+              'name' => 'cache_expires',
+              'desc' => 'The number of seconds before the cached pages expire and must be regenerated; leave empty to use the cache provider option for cache_expires.',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => false,
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'The number of seconds before the cached pages expire and must be regenerated; leave empty to use the cache provider option for cache_expires.',
+              'area_trans' => '',
+            ),
+            'pageNavScheme' => 
+            array (
+              'name' => 'pageNavScheme',
+              'desc' => 'Optionally specify a scheme for use when generating page navigation links; will use link_tag_scheme if empty or not specified (default is empty).',
+              'type' => 'textfield',
+              'options' => '',
+              'value' => '',
+              'lexicon' => NULL,
+              'area' => '',
+              'desc_trans' => 'Optionally specify a scheme for use when generating page navigation links; will use link_tag_scheme if empty or not specified (default is empty).',
+              'area_trans' => '',
+            ),
+          ),
+          'moduleguid' => '',
+          'static' => false,
+          'static_file' => '',
+          'content' => '/**
+ * @package getpage
+ */
+$output = \'\';
+
+$properties =& $scriptProperties;
+$properties[\'page\'] = (isset($_GET[$properties[\'pageVarKey\']]) && ($page = intval($_GET[$properties[\'pageVarKey\']]))) ? $page : null;
+if ($properties[\'page\'] === null) {
+    $properties[\'page\'] = (isset($_REQUEST[$properties[\'pageVarKey\']]) && ($page = intval($_REQUEST[$properties[\'pageVarKey\']]))) ? $page : 1;
+}
+$properties[\'limit\'] = (isset($_GET[\'limit\'])) ? intval($_GET[\'limit\']) : null;
+if ($properties[\'limit\'] === null) {
+    $properties[\'limit\'] = (isset($_REQUEST[\'limit\'])) ? intval($_REQUEST[\'limit\']) : intval($limit);
+}
+$properties[\'offset\'] = (!empty($properties[\'limit\']) && !empty($properties[\'page\'])) ? ($properties[\'limit\'] * ($properties[\'page\'] - 1)) : 0;
+$properties[\'totalVar\'] = empty($totalVar) ? "total" : $totalVar;
+$properties[$properties[\'totalVar\']] = !empty($properties[$properties[\'totalVar\']]) && $total = intval($properties[$properties[\'totalVar\']]) ? $total : 0;
+$properties[\'pageOneLimit\'] = (!empty($pageOneLimit) && $pageOneLimit = intval($pageOneLimit)) ? $pageOneLimit : $properties[\'limit\'];
+$properties[\'actualLimit\'] = $properties[\'limit\'];
+$properties[\'pageLimit\'] = isset($pageLimit) && is_numeric($pageLimit) ? intval($pageLimit) : 5;
+$properties[\'element\'] = empty($element) ? \'\' : $element;
+$properties[\'elementClass\'] = empty($elementClass) ? \'modChunk\' : $elementClass;
+$properties[\'pageNavVar\'] = empty($pageNavVar) ? \'page.nav\' : $pageNavVar;
+$properties[\'pageNavTpl\'] = !isset($pageNavTpl) ? "<li[[+classes]]><a[[+classes]][[+title]] href=\\"[[+href]]\\">[[+pageNo]]</a></li>" : $pageNavTpl;
+$properties[\'pageNavOuterTpl\'] = !isset($pageNavOuterTpl) ? "[[+first]][[+prev]][[+pages]][[+next]][[+last]]" : $pageNavOuterTpl;
+$properties[\'pageActiveTpl\'] = !isset($pageActiveTpl) ? "<li[[+activeClasses:default=` class=\\"active\\"`]]><a[[+activeClasses:default=` class=\\"active\\"`]][[+title]] href=\\"[[+href]]\\">[[+pageNo]]</a></li>" : $pageActiveTpl;
+$properties[\'pageFirstTpl\'] = !isset($pageFirstTpl) ? "<li class=\\"control\\"><a[[+title]] href=\\"[[+href]]\\">First</a></li>" : $pageFirstTpl;
+$properties[\'pageLastTpl\'] = !isset($pageLastTpl) ? "<li class=\\"control\\"><a[[+title]] href=\\"[[+href]]\\">Last</a></li>" : $pageLastTpl;
+$properties[\'pagePrevTpl\'] = !isset($pagePrevTpl) ? "<li class=\\"control\\"><a[[+title]] href=\\"[[+href]]\\">&lt;&lt;</a></li>" : $pagePrevTpl;
+$properties[\'pageNextTpl\'] = !isset($pageNextTpl) ? "<li class=\\"control\\"><a[[+title]] href=\\"[[+href]]\\">&gt;&gt;</a></li>" : $pageNextTpl;
+$properties[\'toPlaceholder\'] = !empty($toPlaceholder) ? $toPlaceholder : \'\';
+$properties[\'cache\'] = isset($cache) ? (boolean) $cache : (boolean) $modx->getOption(\'cache_resource\', null, false);
+if (empty($cache_key)) $properties[xPDO::OPT_CACHE_KEY] = $modx->getOption(\'cache_resource_key\', null, \'resource\');
+if (empty($cache_handler)) $properties[xPDO::OPT_CACHE_HANDLER] = $modx->getOption(\'cache_resource_handler\', null, \'xPDOFileCache\');
+if (empty($cache_expires)) $properties[xPDO::OPT_CACHE_EXPIRES] = (integer) $modx->getOption(\'cache_resource_expires\', null, 0);
+
+if ($properties[\'page\'] == 1 && $properties[\'pageOneLimit\'] !== $properties[\'actualLimit\']) {
+    $properties[\'limit\'] = $properties[\'pageOneLimit\'];
+}
+
+if ($properties[\'cache\']) {
+    $properties[\'cachePageKey\'] = $modx->resource->getCacheKey() . \'/\' . $properties[\'page\'] . \'/\' . md5(http_build_query($modx->request->getParameters()) . http_build_query($scriptProperties));
+    $properties[\'cacheOptions\'] = array(
+        xPDO::OPT_CACHE_KEY => $properties[xPDO::OPT_CACHE_KEY],
+        xPDO::OPT_CACHE_HANDLER => $properties[xPDO::OPT_CACHE_HANDLER],
+        xPDO::OPT_CACHE_EXPIRES => $properties[xPDO::OPT_CACHE_EXPIRES],
+    );
+}
+$cached = false;
+if ($properties[\'cache\']) {
+    if ($modx->getCacheManager()) {
+        $cached = $modx->cacheManager->get($properties[\'cachePageKey\'], $properties[\'cacheOptions\']);
+    }
+}
+if (empty($cached) || !isset($cached[\'properties\']) || !isset($cached[\'output\'])) {
+    $elementObj = $modx->getObject($properties[\'elementClass\'], array(\'name\' => $properties[\'element\']));
+    if ($elementObj) {
+        $elementObj->setCacheable(false);
+        if (!empty($properties[\'toPlaceholder\'])) {
+            $elementObj->process($properties);
+            $output = $modx->getPlaceholder($properties[\'toPlaceholder\']);
+        } else {
+            $output = $elementObj->process($properties);
+        }
+    }
+
+    include_once $modx->getOption(\'getpage.core_path\',$properties,$modx->getOption(\'core_path\', $properties, MODX_CORE_PATH) . \'components/getpage/\').\'include.getpage.php\';
+
+    $qs = $modx->request->getParameters();
+    $properties[\'qs\'] =& $qs;
+
+    $totalSet = $modx->getPlaceholder($properties[\'totalVar\']);
+    $properties[$properties[\'totalVar\']] = (($totalSet = intval($totalSet)) ? $totalSet : $properties[$properties[\'totalVar\']]);
+    if (!empty($properties[$properties[\'totalVar\']]) && !empty($properties[\'actualLimit\'])) {
+        if ($properties[\'pageOneLimit\'] !== $properties[\'actualLimit\']) {
+            $adjustedTotal = $properties[$properties[\'totalVar\']] - $properties[\'pageOneLimit\'];
+            $properties[\'pageCount\'] = $adjustedTotal > 0 ? ceil($adjustedTotal / $properties[\'actualLimit\']) + 1 : 1;
+        } else {
+            $properties[\'pageCount\'] = ceil($properties[$properties[\'totalVar\']] / $properties[\'actualLimit\']);
+        }
+    } else {
+        $properties[\'pageCount\'] = 1;
+    }
+    if (empty($properties[$properties[\'totalVar\']]) || empty($properties[\'actualLimit\']) || $properties[$properties[\'totalVar\']] <= $properties[\'actualLimit\'] || ($properties[\'page\'] == 1 && $properties[$properties[\'totalVar\']] <= $properties[\'pageOneLimit\'])) {
+        $properties[\'page\'] = 1;
+    } else {
+        $pageNav = getpage_buildControls($modx, $properties);
+        $properties[$properties[\'pageNavVar\']] = $modx->newObject(\'modChunk\')->process(array_merge($properties, $pageNav), $properties[\'pageNavOuterTpl\']);
+        if ($properties[\'page\'] > 1) {
+            $qs[$properties[\'pageVarKey\']] = $properties[\'page\'];
+        }
+    }
+
+    $properties[\'firstItem\'] = $properties[\'offset\'] + 1;
+    $properties[\'lastItem\'] = ($properties[\'offset\'] + $properties[\'limit\']) < $totalSet ? ($properties[\'offset\'] + $properties[\'limit\']) : $totalSet;
+
+    $properties[\'pageUrl\'] = $modx->makeUrl($modx->resource->get(\'id\'), \'\', $qs);
+    if ($properties[\'cache\'] && $modx->getCacheManager()) {
+        $cached = array(\'properties\' => $properties, \'output\' => $output);
+        $modx->cacheManager->set($properties[\'cachePageKey\'], $cached, $properties[xPDO::OPT_CACHE_EXPIRES], $properties[\'cacheOptions\']);
+    }
+} else {
+    $properties = $cached[\'properties\'];
+    $output = $cached[\'output\'];
+}
+$modx->setPlaceholders($properties, $properties[\'namespace\']);
+if (!empty($properties[\'toPlaceholder\'])) {
+    $modx->setPlaceholder($properties[\'toPlaceholder\'], $output);
+    $output = \'\';
+}
+
+return $output;',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+        ),
+      ),
+      'phpthumbof' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 2,
+          'source' => 0,
+          'property_preprocess' => false,
+          'name' => 'phpthumbof',
+          'description' => 'A custom output filter that generates thumbnails securely with phpThumb.',
+          'editor_type' => 0,
+          'category' => 0,
+          'cache_type' => 0,
+          'snippet' => '/**
+ * phpThumbOf
+ *
+ * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>
+ *
+ * phpThumbOf is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option) any
+ * later version.
+ *
+ * phpThumbOf is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple
+ * Place, Suite 330, Boston, MA 02111-1307 USA
+ *
+ * @package phpthumbof
+ */
+/**
+ * A custom output filter for phpThumb
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var phpThumbOf $phpThumbOf
+ * @var string $input
+ * @var string|array $options
+ *
+ * @package phpthumbof
+ */
+if (empty($modx)) return \'\';
+if (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model/phpthumb/\',true,true)) {
+    $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class.\');
+    return \'\';
+}
+if (empty($input)) {
+    $modx->log(modX::LOG_LEVEL_DEBUG,\'[phpThumbOf] Empty image path passed, aborting.\');
+    return \'\';
+}
+$modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components/phpthumbof/\').\'model/\';
+require_once $modelPath.\'phpthumbof/phpthumbof.class.php\';
+$phpThumbOf = new phpThumbOf($modx,$scriptProperties);
+
+$phpThumbOf->getCacheDirectory();
+$phpThumbOf->ensureCacheDirectoryIsWritable();
+
+$thumbnail = $phpThumbOf->createThumbnailObject();
+$thumbnail->setInput($input);
+$thumbnail->setOptions($options);
+$thumbnail->initializeService();
+return $thumbnail->render();',
+          'locked' => false,
+          'properties' => NULL,
+          'moduleguid' => '',
+          'static' => false,
+          'static_file' => '',
+          'content' => '/**
+ * phpThumbOf
+ *
+ * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>
+ *
+ * phpThumbOf is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option) any
+ * later version.
+ *
+ * phpThumbOf is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple
+ * Place, Suite 330, Boston, MA 02111-1307 USA
+ *
+ * @package phpthumbof
+ */
+/**
+ * A custom output filter for phpThumb
+ *
+ * @var modX $modx
+ * @var array $scriptProperties
+ * @var phpThumbOf $phpThumbOf
+ * @var string $input
+ * @var string|array $options
+ *
+ * @package phpthumbof
+ */
+if (empty($modx)) return \'\';
+if (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model/phpthumb/\',true,true)) {
+    $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class.\');
+    return \'\';
+}
+if (empty($input)) {
+    $modx->log(modX::LOG_LEVEL_DEBUG,\'[phpThumbOf] Empty image path passed, aborting.\');
+    return \'\';
+}
+$modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components/phpthumbof/\').\'model/\';
+require_once $modelPath.\'phpthumbof/phpthumbof.class.php\';
+$phpThumbOf = new phpThumbOf($modx,$scriptProperties);
+
+$phpThumbOf->getCacheDirectory();
+$phpThumbOf->ensureCacheDirectoryIsWritable();
+
+$thumbnail = $phpThumbOf->createThumbnailObject();
+$thumbnail->setInput($input);
+$thumbnail->setOptions($options);
+$thumbnail->initializeService();
+return $thumbnail->render();',
         ),
         'policies' => 
         array (

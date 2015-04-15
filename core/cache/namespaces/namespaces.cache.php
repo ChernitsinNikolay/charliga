@@ -5,10 +5,16 @@
     'path' => '/var/www/charliga/manager/',
     'assets_path' => '/var/www/charliga/manager/assets/',
   ),
-  'rs14' => 
+  'gallery' => 
   array (
-    'name' => 'rs14',
-    'path' => '/var/www/charliga/assets/templates/rs14/',
+    'name' => 'gallery',
+    'path' => '/var/www/charliga/core/components/gallery/',
+    'assets_path' => '/Users/theboxer/www/modx/pkgs/gallery/assets/components/gallery/',
+  ),
+  'phpthumbof' => 
+  array (
+    'name' => 'phpthumbof',
+    'path' => '/var/www/charliga/core/components/phpthumbof/',
     'assets_path' => '',
   ),
   'wayfinder' => 

@@ -35,8 +35,15 @@
           background: #0dbfe5;		
 }
 
-#content #colLeft {
+#content #colTopLeft {
 	color: #fff;
+    /*background: #DDA0DD;*/		
+	float:left;
+	width:800px;
+	margin-right:0px;
+        }
+#content #colDownLeft {
+	/*color: #fff;*/
     /*background: #DDA0DD;*/		
 	float:left;
 	width:800px;
